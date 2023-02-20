@@ -7,39 +7,20 @@ string reply;
 
 do
 {
+    //Menu
     Console.WriteLine("For addition       + input 1");
     Console.WriteLine("For subtraction    - input 2");
     Console.WriteLine("For division       / input 3");
     Console.WriteLine("For multiplication * input 4");
 
+    //Input
     Console.WriteLine("\nInput type operation:");
     int operation = Convert.ToInt32(Console.ReadLine());
 
     Console.Clear();
 
-    /*
-
-    string operationPrint;
-    {
-        if (operation == 1)
-        { operationPrint = "addition +"; }
-
-        if (operation == 2)
-        { operationPrint = "subtraction -"; }
-
-        if (operation == 3)
-        { operationPrint = "division /"; }
-
-        if (operation == 4)
-        { operationPrint = "multiplication *"; }
-
-    }
-        
-    //    Console.WriteLine($"Operation is: {operationPrint}");
-    
-   */
-
-    Console.WriteLine($"Operation is: ");
+    string operationPrint = OperationPrint.ResultOperationPrint(operation);
+    Console.WriteLine($"Operation is: {operationPrint}");
 
     Console.WriteLine("Input X:");
     int x = Convert.ToInt32(Console.ReadLine());
@@ -55,7 +36,6 @@ do
     reply = Console.ReadLine();
 
 
-
     if (reply.ToLower() == "y")
     {
         Console.Clear();
@@ -64,4 +44,6 @@ do
 }
 
 while (reply.ToLower() == "y");
+
+Console.WriteLine("\nGood-bye");
 
