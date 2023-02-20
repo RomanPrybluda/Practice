@@ -23,16 +23,16 @@ do
     Console.WriteLine($"Operation is: {operationPrint}");
 
     Console.WriteLine("Input X:");
-    int x = Convert.ToInt32(Console.ReadLine());
+    double x = Convert.ToDouble(Console.ReadLine());
 
     Console.WriteLine("Input Y:");
-    int y = Convert.ToInt32(Console.ReadLine());
+    double y = Convert.ToDouble(Console.ReadLine());
 
-    int result = Result.CalcResult(operation, y, x);
+    double result = Result.CalcResult(operation, y, x);
 
-    Console.WriteLine($"Result: {result}");
+    Console.WriteLine($"Result: {result:F2}");
 
-    Console.WriteLine("Do you want to continue? (y/n)");
+    Console.WriteLine("\nDo you want to continue? (y/n)");
     reply = Console.ReadLine();
 
 

@@ -10,9 +10,9 @@ namespace _01_Calculator
 
     {
 
-        public static int CalcResult(int operation, int x, int y)
+        public static double CalcResult(int operation, double x, double y)
         {
-            int result = 0;
+            double result = 0;
             
             if (operation == 1)
             {
