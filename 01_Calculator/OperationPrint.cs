@@ -9,20 +9,20 @@ namespace _01_Calculator
     public class OperationPrint
     {
 
-        public static string ResultOperationPrint(int operation)
+        public static string ResultOperationPrint(string operation, string ADDITION, string SUBTRACTION, string DIVISION, string MULTIPLICATION)
         {
             string operationPrint = "";
 
-            if (operation == 1)
+            if (operation == ADDITION)
             { operationPrint = "addition +"; }
 
-            if (operation == 2)
+            if (operation == SUBTRACTION)
             { operationPrint = "subtraction -"; }
 
-            if (operation == 3)
+            if (operation == DIVISION)
             { operationPrint = "division /"; }
 
-            if (operation == 4)
+            if (operation == MULTIPLICATION)
             { operationPrint = "multiplication *"; }
 
             return operationPrint;

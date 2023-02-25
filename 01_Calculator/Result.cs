@@ -10,26 +10,26 @@ namespace _01_Calculator
 
     {
 
-        public static double CalcResult(int operation, double x, double y)
+        public static double CalcResult(string operation, double x, double y, string ADDITION, string SUBTRACTION, string DIVISION, string MULTIPLICATION)
         {
             double result = 0;
             
-            if (operation == 1)
+            if (operation == ADDITION)
             {
                 result = x + y;
             }
 
-            if (operation == 2)
+            if (operation == SUBTRACTION)
             {
                 result = x - y;
             }
 
-            if (operation == 3)
+            if (operation == DIVISION)
             {
                 result = x / y;
             }
 
-            if (operation == 4)
+            if (operation == MULTIPLICATION)
             {
                 result = x * y;
             }

@@ -1,34 +1,76 @@
 ﻿
 using _01_Calculator;
 
+// Console window property
+
 Console.Title = "___Simple calculator___";
+Console.BackgroundColor = ConsoleColor.DarkBlue;
+Console.Clear();
+Console.ForegroundColor = ConsoleColor.White;
+Console.WindowWidth = 80;
+
+
 
 string reply;
 
 do
 {
-    //Menu
-    Console.WriteLine("For addition       + input 1");
-    Console.WriteLine("For subtraction    - input 2");
-    Console.WriteLine("For division       / input 3");
-    Console.WriteLine("For multiplication * input 4");
+    string operation;
+    bool operationIsCorrected;
+    const string ADDITION = "+", SUBTRACTION = "-", DIVISION = "/", MULTIPLICATION = "*";
+    
+    // Check input operation
 
-    //Input
-    Console.WriteLine("\nInput type operation:");
-    int operation = Convert.ToInt32(Console.ReadLine());
+    do
+    {    
+        // Menu
+        Console.WriteLine("For addition       +");
+        Console.WriteLine("For subtraction    -");
+        Console.WriteLine("For division       /");
+        Console.WriteLine("For multiplication *");
+        
+        Console.Write("\nInput type operation: ");
+        operation = Console.ReadLine();
+
+        {
+            
+            switch (operation)
+            {
+                case ADDITION:
+                case SUBTRACTION:
+                case DIVISION:
+                case MULTIPLICATION:
+                    {
+                        operationIsCorrected = true;
+                        break;
+                    }
+                default:
+                    {
+                        operationIsCorrected = false;
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"\nInput correct operation, please.\n");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        break;
+                    }
+
+            }
+        }
+    }
+
+    while (operationIsCorrected == false);
 
     Console.Clear();
-
-    string operationPrint = OperationPrint.ResultOperationPrint(operation);
+    
+    string operationPrint = OperationPrint.ResultOperationPrint(operation, ADDITION, SUBTRACTION, DIVISION, MULTIPLICATION);
     Console.WriteLine($"Operation is: {operationPrint}");
-
-    Console.WriteLine("Input X:");
+    
+    Console.Write("Input X: ");
     double x = Convert.ToDouble(Console.ReadLine());
 
-    Console.WriteLine("Input Y:");
+    Console.Write("Input Y: ");
     double y = Convert.ToDouble(Console.ReadLine());
 
-    double result = Result.CalcResult(operation, y, x);
+    double result = Result.CalcResult(operation, y, x, ADDITION, SUBTRACTION, DIVISION, MULTIPLICATION);
 
     Console.WriteLine($"Result: {result:F2}");
 
