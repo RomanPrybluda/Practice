@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Calculator", "01_Calculator\01_Calculator.csproj", "{007DEA5B-2444-4240-A898-927BFF234F93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleInput", "ConsoleInput\ConsoleInput.csproj", "{A55CCA5B-093F-4CD6-A9E0-8EA7DD6ED8F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleInput", "ConsoleInput\ConsoleInput.csproj", "{A55CCA5B-093F-4CD6-A9E0-8EA7DD6ED8F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGrafic01flag", "ConsoleGrafic01flag\ConsoleGrafic01flag.csproj", "{C943B709-D3B8-49E0-8CE5-F6F523499A23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A55CCA5B-093F-4CD6-A9E0-8EA7DD6ED8F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A55CCA5B-093F-4CD6-A9E0-8EA7DD6ED8F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A55CCA5B-093F-4CD6-A9E0-8EA7DD6ED8F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C943B709-D3B8-49E0-8CE5-F6F523499A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C943B709-D3B8-49E0-8CE5-F6F523499A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C943B709-D3B8-49E0-8CE5-F6F523499A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C943B709-D3B8-49E0-8CE5-F6F523499A23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

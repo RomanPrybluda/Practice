@@ -13,30 +13,29 @@ namespace _01_Calculator
         public static double CalcResult(string operation, double x, double y, string ADDITION, string SUBTRACTION, string DIVISION, string MULTIPLICATION)
         {
             double result = 0;
-            
+
             if (operation == ADDITION)
             {
-                result = x + y;
+                result = checked(x + y);
             }
 
             if (operation == SUBTRACTION)
             {
-                result = x - y;
+                result = checked(x - y);
             }
 
             if (operation == DIVISION)
             {
-                result = x / y;
+                result = checked(x / y);
             }
 
             if (operation == MULTIPLICATION)
             {
-                result = x * y;
+                result = checked(x * y);
             }
 
             return result;
         }
-
 
     }
 }

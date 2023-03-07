@@ -9,8 +9,6 @@ Console.Clear();
 Console.ForegroundColor = ConsoleColor.White;
 Console.WindowWidth = 80;
 
-
-
 string reply;
 
 do
@@ -33,7 +31,6 @@ do
         operation = Console.ReadLine();
 
         {
-            
             switch (operation)
             {
                 case ADDITION:
@@ -69,7 +66,7 @@ do
 
     Console.Write("Input Y: ");
     double y = Convert.ToDouble(Console.ReadLine());
-
+    
     double result = Result.CalcResult(operation, y, x, ADDITION, SUBTRACTION, DIVISION, MULTIPLICATION);
 
     Console.WriteLine($"Result: {result:F2}");
