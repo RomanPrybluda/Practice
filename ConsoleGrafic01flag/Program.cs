@@ -84,16 +84,3 @@ for (int h2 = 0; h2 < heightFlagHalf; h2++)
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine(symbolFlag);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
