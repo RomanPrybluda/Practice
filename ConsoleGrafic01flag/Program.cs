@@ -14,12 +14,33 @@ Console.ForegroundColor = ConsoleColor.White;
 
 Console.Write("Input symbol for flag: ");
 string symbolFlag = Console.ReadLine();
-Console.Write("Input lenght of flag (q-ty symbols): ");
-int lengthFlag = Convert.ToInt32(Console.ReadLine());
+
+bool result;
+int lengthFlag;
+
+do
+{
+    Console.Write("Input lenght of flag (q-ty symbols): ");
+    string lengthFlagInput = Console.ReadLine();
+    result = int.TryParse(lengthFlagInput, out lengthFlag);
+
+    if (result)
+    {
+        ;
+    }
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Input an integer please.");
+        Console.ForegroundColor = ConsoleColor.White;
+    }
+
+}
+while (result == false);
 
 // Height Flag
 
-int heightFlag = lengthFlag/3;
+int heightFlag = lengthFlag / 3;
 int heightFlagHalf = heightFlag / 2;
 
 // Output
