@@ -1,7 +1,7 @@
 ﻿
 /* Application draw the flag of UKRAINE.
-// The lenght and symbol we can choose.
-// Flag proportion 1:3/H:L.*/
+   The lenght and symbol we can choose.
+   Flag proportion 1:3/H:L.*/
 
 // Window properties
 
